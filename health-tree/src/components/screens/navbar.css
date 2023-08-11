@@ -1,0 +1,32 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.customnav {
+  background: #d7f2fb;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 2px;
+}
+.customnav:hover {
+  background: #005198;
+  border-radius: 20px;      
+  transition: .5s ease-in-out;
+  border-color: none;
+  color: #fff !important; 
+}
+
+.customnav:hover .nav-link {
+    color: #fff !important; 
+  }
+
+ .nav-link.active {
+    color: #fff !important; 
+    background: #005198;
+    border-radius: 20px; 
+  }
+
+  
+

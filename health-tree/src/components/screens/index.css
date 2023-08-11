@@ -1,0 +1,490 @@
+.link {
+  text-decoration: none;
+}
+
+.main {
+  margin: 100px;
+}
+.main-text {
+  font-family: "Merriweather";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.p-text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.btn {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 100;
+  background: #005198;
+  color: #fff;
+  /* float: left; */
+  padding: 10px 20px;
+  width: auto;
+}
+
+.btn:hover {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 100;
+  background: #fff;
+  color: #005198;
+  border: 1px solid #005198;
+  /* float: left; */
+  padding: 10px 20px;
+  width: auto;
+}
+
+.section-2 {
+  margin: 5px 0;
+  padding: 5px;
+}
+.dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #8fe4ff;
+  position: relative;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+.search {
+  align-items: center;
+  position: absolute;
+  top: 22%;
+  left: 24%;
+}
+
+.para {
+  line-height: 45px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.about {
+  background: #8fe4ff;
+  height: 45px;
+  line-height: 45px;
+  text-align: left;
+}
+.downarrow {
+  float: right;
+}
+
+.section-3 {
+  margin-top: 60px;
+  background: #8fe4ff !important;
+  align-items: center;
+  position: relative;
+  padding: 0 !important;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+.box {
+  height: 60px;
+  width: 600px;
+  background: #fff;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: -60px;
+  position: absolute;
+}
+.box h2 {
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+}
+.bar {
+  margin: 0 30px;
+  width: 133px;
+  height: 10px;
+  background: #005198;
+  color: #005198;
+}
+.bar1 {
+  margin: 0 0px 10px;
+  width: 133px;
+  height: 10px;
+  background: #005198;
+  color: #005198;
+}
+.bar2 {
+  margin: 0px 0px 10px;
+  width: 133px;
+  height: 3px;
+  background: #005198;
+  color: #005198;
+}
+
+.bar5 {
+  margin: 25px 20px 10px 0px;
+  width: 133px;
+  height: 3px;
+  background: #005198;
+  color: #005198;
+  display: flex;
+}
+.para1 {
+  padding: 10px;
+  text-align: left;
+}
+
+.section-4 {
+  margin: 100px 0;
+  background: #8fe4ff;
+  height: auto;
+  padding: 30px;
+  align-items: center;
+}
+.count {
+  font-family: "Merriweather";
+  font-size: 84px;
+  font-weight: bold;
+  text-align: center;
+}
+.countp {
+  font-family: "Merriweather";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.countptext {
+  font-family: "Merriweather";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #005198;
+  padding: 7px;
+  align-items: stretch;
+}
+.countpt {
+  font-family: "Merriweather";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+.box3 {
+  height: 210px;
+  width: 310px;
+}
+
+.box3 > h1 {
+  font-family: "Merriweather";
+  font-size: 84px;
+  font-weight: bold;
+  text-align: center;
+}
+.box3 > p {
+  font-family: "Merriweather";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.box4 {
+  height: 260px;
+  width: 450px;
+}
+.box4 > div {
+  border: 1px dotted #005198;
+  padding: 10px;
+}
+.box4 > div > div {
+  border: 5px solid #005198;
+  padding: 10px;
+}
+
+.box4 > div > div > p {
+  font-family: "Merriweather";
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-5 > h3 {
+  text-align: center;
+}
+
+.box-img {
+  position: relative;
+  /* width: 18%; */
+  margin: 2px;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.box-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #8fe4ff;
+  opacity: 1;
+  transition: 500ms ease-in;
+  border-radius: 0 0 60% 0;
+}
+
+.box-img:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 0;
+}
+
+.carousel .control-dots .dot.selected {
+  width: 100px;
+  height: 5px;
+  border-radius: 0%;
+  background: #005198;
+}
+
+.footer {
+  margin-top: -10px;
+  background: #005198;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.footertext {
+  color: #fff;
+  font-family: "montserrat";
+  font-size: small;
+  font-weight: 16px;
+}
+
+.person {
+  border: 5px solid #fff;
+  margin: 5px 20px 5px 0px;
+  background: #005198;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: #fff;
+}
+
+.image {
+  z-index: 9;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  color: black;
+}
+
+.person:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+  white-space: wrap;
+}
+.fooo {
+  margin: 13px 30px;
+  width: 133px;
+  height: 5px;
+  background: #005198;
+  color: #005198;
+}
+
+.arrowlink {
+  background: #005198;
+  color: #fff;
+  align-items: center;
+  padding: 90px 2px;
+}
+
+.banner {
+  background: #005198;
+}
+
+.ctsus {
+  font-family: "morrieweather";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.ctsus2 {
+  font-family: "merriweather";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ctusp {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
+}
+.loctext {
+  font-family: "inter";
+  font-size: 28px;
+  font-weight: bold;
+}
+.locptext {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.clienth1 {
+  font-family: "merriweather";
+  font-size: 40px;
+  font-weight: bold;
+  color: #005198;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.serviceh1 {
+  font-family: "merriweather";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* recurment */
+
+.recbanner {
+  font-family: "merriweather";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+  transform: translateY(30%);
+  color: #fff;
+}
+.recbanner5 {
+  font-family: "merriweather";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+  transform: translateY(50%);
+  margin-top: 25px;
+  padding-left: 130px;
+  color: #fff;
+}
+.cutcolor {
+  color: #005198;
+}
+.list1 > li {
+  padding: 7px 10px;
+  box-shadow: #8fe4ff;
+}
+
+/* diagnostics */
+.recbanner1 {
+  font-family: "merriweather";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+  transform: translateY(50%);
+  color: #fff;
+  margin-top: 50px;
+  padding: 0px 100px;
+}
+
+/* ourstory */
+
+.recbanner1 {
+  font-family: "merriweather";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+  transform: translateY(50%);
+  color: #fff;
+  margin-top: 40px;
+  margin: auto;
+  padding: 0px 0px 0px 150px;
+}
+
+/* Styling for the file input */
+.file-input {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Styling for the file label (upload button) */
+.file-label {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.managepara {
+  color: #005198;
+}
+
+.whatsapp {
+  position: fixed;
+  padding: 10px;
+  right: 0;
+  bottom: 0;
+}
+.resmap {
+  width: 600px;
+  height: 420px;
+}
+@media only screen and (max-width: 756px) {
+  .recbanner {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .bottom {
+    padding-bottom: 20px;
+  }
+  .resmap {
+    width: 350px;
+    height: 250px;
+  }
+}
