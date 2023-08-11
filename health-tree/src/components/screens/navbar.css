@@ -4,6 +4,7 @@ body {
   font-weight: bold;
 }
 
+
 .customnav {
   background: #d7f2fb;
   border-radius: 20px;
@@ -28,5 +29,12 @@ body {
     border-radius: 20px; 
   }
 
+
+  @media only screen and (max-width: 756px) {
+  .navbar{
+    background:#d7f2fb !important;
+    text-align: center;
+  }
+  }
   
 

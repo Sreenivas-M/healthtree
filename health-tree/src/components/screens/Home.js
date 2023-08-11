@@ -172,13 +172,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="section-6 main">
+      <div className="section-6">
         <div>
           <ImageCarousel />
         </div>
       </div>
-      <div>
-        <div className="text-center pb-3">
+      <div className="section6">
+        <div className="text-center pb-3 ">
           <h2>Transforming Healthcare Recruitment Globally</h2>
           <p className="p-4">
             Our technology puts everything in one place - Streamlining
@@ -193,7 +193,7 @@ function Home() {
             <span className="cutcolor"> anyone, anywhere, anytime.</span>
           </p>
         </div>
-        <div>
+        <div className="">
           <Imgcarousel />
         </div>
       </div>
@@ -317,7 +317,10 @@ function Home() {
       <div className="main">
         <ServiceCarousel />
       </div>
-      <ClientCarousel />
+
+      <div>
+        <ClientCarousel />
+      </div>
       <div className="main">
         <Clientsayscarousel />
       </div>
@@ -327,7 +330,7 @@ function Home() {
             <div className="bar5"></div>
             <h2 className="serviceh1">News, Events and Blogs</h2>
           </div>{" "}
-          <h6 className="">
+          <h6 className="rightarrow">
             <NavLink
               to="./blog"
               style={{ textDecoration: "none", color: "black" }}
@@ -366,7 +369,7 @@ function Home() {
                 ></div>
               </div>
             </div>
-            <div className="col-md-4 p-3">
+            <div className="col-md-4 p-3 cardborder">
               <img src={blog2} alt="" className="img-fluid" />
               <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
               <p>
@@ -394,7 +397,7 @@ function Home() {
                 ></div>
               </div>
             </div>
-            <div className="col-md-4 p-3">
+            <div className="col-md-4 p-3 cardborder">
               <img src={blog3} alt="" className="img-fluid" />
               <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
               <p>
@@ -426,7 +429,6 @@ function Home() {
         </div>
       </div>
       <ContactUs />
-      
     </>
   );
 }

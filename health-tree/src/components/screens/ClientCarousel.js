@@ -17,7 +17,7 @@ function ClientCarousel() {
     cssEase: "linear",
   };
   return (
-    <div style={{background:"#8fe4ff", paddingBottom:"50px"}}>
+    <div style={{background:"#8fe4ff", padding:"0 50px 50px 50px"}}>
       <div className="mt-5 pb-5">
         <h1 className="clienth1">OUR CLIENTS</h1>
         <p className="text-center">
@@ -30,22 +30,22 @@ function ClientCarousel() {
       </div>
       <div className="mainContainer">
         <Slider {...settings}>
-          <div className="container">
+          <div className="">
             <img src={logo1} className="img-fluid"/>
           </div>
-          <div className="container">
+          <div className="">
             <img src={logo2} className="img-fluid"/>
           </div>
-          <div className="container">
+          <div className="">
             <img src={logo4} className="img-fluid"/>
           </div>
-          <div className="container">
+          <div className="">
             <img src={logo3} className="img-fluid"/>
           </div>
-          <div className="container">
+          <div className="">
             <img src={logo1} className="img-fluid"/>
           </div>
-          <div className="container">
+          <div className="">
             <img src={logo4} className="img-fluid"/>
           </div>
         </Slider>

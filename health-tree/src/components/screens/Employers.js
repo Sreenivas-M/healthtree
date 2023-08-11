@@ -48,7 +48,7 @@ function Employers() {
         `,
       };
       const serviceID = "service_3qw0dgr";
-      const templateID = "template_0lfvgxw";
+      const templateID = "template_if0rjg8";
       const publicKey = "4i-_qT5weaGkFiVzL";
       await emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((res) => {

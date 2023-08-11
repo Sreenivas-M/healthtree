@@ -83,21 +83,21 @@ function Footer() {
       </div>
 
       <div className="row main">
-        <div className="col-md-4">
-          <img src={ftimg} alt="" className="w-75 h-75" />
+        <div className="col-md-4 socaillogo">
+          <img src={ftimg} alt="" className="img-fluid" />
         </div>
-        <div className="col-md-4">
-          <div className="d-flex mt-5">
+        <div className="col-md-4 socailp">
+          <div className="d-flex mt-5 socailp">
             <p >Terms of Service </p> &nbsp; &nbsp; &nbsp; <p> Privacy Policy </p>
           </div>
         </div>
         <div className="col-md-3 mt-4">
-          <div className="d-flex justify-content-between align-items-center">
-            <img src={fb} alt="" className="img-fluid"/>
-            <img src={link} alt="" />
-            <img src={insta} alt="" />
-            <img src={you} alt="" />
-            <img src={twi} alt="" />
+          <div className="d-flex justify-content-between align-items-center social">
+            <img src={fb} alt="" className="m-2"/>
+            <img src={link} alt="" className="m-2" />
+            <img src={insta} alt="" className="m-2" />
+            <img src={you} alt=""  className="m-2"/>
+            <img src={twi} alt="" className="m-2"/>
           </div>
         </div>
       </div>
