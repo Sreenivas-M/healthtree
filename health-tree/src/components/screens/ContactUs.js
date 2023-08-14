@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import loc from "../images/loc.png";
 import email from "../images/email.png";
 import phone from "../images/phone.png";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -41,39 +41,36 @@ function ContactUs() {
       const serviceID = "service_3qw0dgr";
       const templateID = "template_0lfvgxw";
       const publicKey = "4i-_qT5weaGkFiVzL";
-      await emailjs.send(serviceID, templateID, templateParams, publicKey)
-      .then((res) => {
-        setTimeout(() => {
-          window.location.reload()
-        }, 3000);
-        Swal.fire(
-          {icon: 'success',
-          text:'Submited Successfully',
-          }
-        )
-    })
-   
+      await emailjs
+        .send(serviceID, templateID, templateParams, publicKey)
+        .then((res) => {
+          setTimeout(() => {
+            window.location.reload();
+          }, 3000);
+          Swal.fire({ icon: "success", text: "Submited Successfully" });
+        });
     } catch (error) {
       console.error("Error sending email:", error);
     }
   };
   return (
-    <div style={{ background: "#e7f8fd" }} className="pt-5 pb-3">
-      <h1 className="text-center ctsus">Contact Us</h1>
+    <>
+      <div style={{ background: "#e7f8fd" }} className="pt-5 pb-3">
+        <h1 className="text-center ctsus">Contact Us</h1>
+      </div>
       <div className="row main">
         <div className="col-md-6">
           <div className="embed-responsive embed-responsive-16by9">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5535651966684!2d77.60858627489591!3d13.000381114247036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f633958de1%3A0x9cdb8db0de481b24!2sHealthTree%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1691688009132!5m2!1sen!2sin"
-            className="resmap"
-            style={{ border: 0 }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5535651966684!2d77.60858627489591!3d13.000381114247036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f633958de1%3A0x9cdb8db0de481b24!2sHealthTree%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1691688009132!5m2!1sen!2sin"
+              className="resmap"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          
-         
+
           <div className="row mt-3">
             <div className="col-2 align-self-center">
               {" "}
@@ -91,10 +88,12 @@ function ContactUs() {
             </div>
             <div className="col-10">
               <h5 className="loctext">Location</h5>
+              <p className="locptext">HealthTree Services Pvt Ltd</p>
               <p className="locptext">
-                Location: 27, St Johns Church Road, Opp Coles
+                {" "}
+                G5, #12, Ashoka Enclave, Netaji Road, Frazer town, Bangalore
+                560005
               </p>
-              <p className="locptext"> Park Bangalore 560 005</p>
             </div>
           </div>
           <div className="row">
@@ -105,7 +104,9 @@ function ContactUs() {
             <div className="col-10">
               <h5 className="loctext">Contact Us</h5>
               <p className="locptext"> U.A.E : +971544460308</p>
-              <p className="locptext">INDIA : +919845263338/+918884751445</p>
+              <p className="locptext">
+                INDIA : 8550077883/ 080 41514141/ 080 41526007
+              </p>
               <p className="locptext">K.S.A : +966502882833</p>
             </div>
           </div>
@@ -141,7 +142,7 @@ function ContactUs() {
                   >
                     <input
                       type="text"
-                      className="form-control ml-5"
+                      className="form-control ml-5 mt-3"
                       placeholder="Last Name"
                       name="lname"
                       value={formData.lname}
@@ -173,7 +174,7 @@ function ContactUs() {
                 </div>
                 <div class="form-group">
                   <textarea
-                  type="text"
+                    type="text"
                     className="form-control mt-3"
                     placeholder="Your Message"
                     rows="14"
@@ -193,7 +194,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

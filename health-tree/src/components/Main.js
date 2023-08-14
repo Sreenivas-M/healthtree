@@ -21,6 +21,7 @@ import ScrollToTop from "./screens/utils/ScrollToTop";
 import Blogs from "./screens/Blogs";
 import Blogone from "./screens/Blogone";
 import ConsultancyManagement from "./screens/ConsultancyManagement";
+import ContactUs from "./screens/ContactUs";
 
 function Main() {
   return (
@@ -41,6 +42,7 @@ function Main() {
         <Route path={"/healthcaretourism"} element={<HealthcareTourism />} />
         <Route path={"/management"} element={<ConsultancyManagement />} />
         <Route path={"/healthcaretourism/healthform"} element={<HealthcareForm />} /> 
+        <Route path={"/contact"} element={<ContactUs />} /> 
         <Route path={"/*"} element={<Pnf />} />
       </Routes>
       </ScrollToTop>

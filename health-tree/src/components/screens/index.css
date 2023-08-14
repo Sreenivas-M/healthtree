@@ -69,7 +69,8 @@
   padding-top: 5px;
 }
 .about {
-  background: #8fe4ff;
+  /* background: #8fe4ff; */
+  background: linear-gradient(to top, blue, darkblue);
   height: 45px;
   line-height: 45px;
   text-align: left;

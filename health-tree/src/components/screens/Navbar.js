@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-md bg-light fixed-top">
       <div className="container">
         <NavLink to={"/"} className="navbar-brand">
-          <img src={logo} alt="Health Tree" className='imgfluid'/>
+          <img src={logo} alt="Health Tree" className='imgfluid' width={250} height={100}  />
         </NavLink>
         <button
           type="button"

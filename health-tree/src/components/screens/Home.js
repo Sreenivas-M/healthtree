@@ -112,7 +112,7 @@ function Home() {
       </div>
 
       <div className="row section-4">
-        <div className="col-lg-8">
+        <div className="col-lg-7">
           <div className="row">
             <div className="col-md-4">
               <h1 className="count">20 +</h1>{" "}
@@ -128,7 +128,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 box4 text-center">
+        <div className="col-lg-5 box4 text-center">
           <div>
             <div>
               <p>
