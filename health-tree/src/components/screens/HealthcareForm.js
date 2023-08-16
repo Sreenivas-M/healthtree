@@ -94,8 +94,8 @@ function HealthcareForm() {
             <form onSubmit={handleSubmit}>
               <div className="row">
                 <div
-                  className="form-group col-md-6"
-                  style={{ marginRight: "25px", width: "290px" }}
+                  className="form-group col-md-6 fnameinput"
+                  style={{ marginRight: "25px"}}
                 >
                   <input
                     type="text"
@@ -108,8 +108,7 @@ function HealthcareForm() {
                   />
                 </div>
                 <div
-                  className="form-group col-md-5 "
-                  style={{ width: "295px" }}
+                  className="form-group col-md-5 lnameinput2"
                 >
                   <input
                     type="text"

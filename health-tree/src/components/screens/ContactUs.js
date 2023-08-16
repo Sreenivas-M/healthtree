@@ -57,10 +57,10 @@ function ContactUs() {
     <>
       <div style={{ background: "#e7f8fd" }} className="pt-5 pb-3">
         <h1 className="text-center ctsus">Contact Us</h1>
-      </div>
+      
       <div className="row main">
         <div className="col-md-6">
-          <div className="embed-responsive embed-responsive-16by9">
+          <div className="embed-responsive embed-responsive-16by9 text-center justify-content-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5535651966684!2d77.60858627489591!3d13.000381114247036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f633958de1%3A0x9cdb8db0de481b24!2sHealthTree%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1691688009132!5m2!1sen!2sin"
               className="resmap"
@@ -123,8 +123,8 @@ function ContactUs() {
               <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div
-                    className="form-group col-md-6"
-                    style={{ marginRight: "25px", width: "290px" }}
+                    className="form-group col-md-6 fnameinput"
+                    style={{ marginRight: "25px"}}
                   >
                     <input
                       type="text"
@@ -137,12 +137,12 @@ function ContactUs() {
                     />
                   </div>
                   <div
-                    className="form-group col-md-5 "
-                    style={{ width: "310px" }}
+                    className="form-group col-md-5 lnameinput"
+                    
                   >
                     <input
                       type="text"
-                      className="form-control ml-5 mt-3"
+                      className="form-control ml-5"
                       placeholder="Last Name"
                       name="lname"
                       value={formData.lname}
@@ -193,6 +193,7 @@ function ContactUs() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

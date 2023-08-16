@@ -191,15 +191,16 @@ function Recuitment() {
         <img src={map} alt="" className="img-fluid" />
       </div>
       
+      
       <div style={{ background: "#8fe4ff" }}>
-        <div className="row main p-5">
-          <div className="col-6 ">
-            <h4 className="d-flex" style={{color:"#005198"}}>
+        <div className="row mainperson">
+          <div className="col-md-6 ">
+            <h4 className="d-flex" style={{ color: "#005198" }}>
               For Candidates <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
-              <div class="container">
+              <div class="">
                 <h5 className="img">
                   "Unlock Global Opportunities in Healthcare”
                 </h5>
@@ -210,7 +211,7 @@ function Recuitment() {
                   an extraordinary journey!
                 </p>
                 <div className="overlay">
-                  <div className="text  d-flex">
+                  <div className="text d-flex overlaybox">
                     <div>
                       {" "}
                       <h5>"Unlock Global Opportunities in Healthcare”</h5>
@@ -221,19 +222,23 @@ function Recuitment() {
                         embark on an extraordinary journey!
                       </p>
                     </div>
-                    <NavLink to={"/candidates"}><div className="arrowlink"><img src={rtarrow} alt="" /></div></NavLink>
+                    <NavLink to={"/candidates"}>
+                      <div className="arrowlink">
+                        <img src={rtarrow} alt="" />
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-6 ">
-            <h4 className="d-flex"style={{color:"#005198"}}>
+          <div className="col-md-6 ">
+            <h4 className="d-flex" style={{ color: "#005198" }}>
               For Employers <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
-              <div className="container">
+              <div className="">
                 <h5 className="img">
                   "Unlock Global Opportunities in Healthcare”
                 </h5>
@@ -244,17 +249,21 @@ function Recuitment() {
                   an extraordinary journey!
                 </p>
                 <div class="overlay">
-                  <div class="text d-flex">
-                  <div>
-                    <h5>"Unlock Global Opportunities in Healthcare”</h5>
-                    <p className="mt-4">
-                      Join HealthTree's international recruitment program and
-                      advance your career worldwide. Explore exciting job
-                      opportunities in renowned hospitals. Apply now and embark
-                      on an extraordinary journey!
-                    </p>
-                   </div>
-                    <NavLink to={"/employees"}><div className="arrowlink"><img src={rtarrow} alt="" /></div></NavLink>
+                  <div class="text d-flex overlaybox">
+                    <div>
+                      <h5>"Unlock Global Opportunities in Healthcare”</h5>
+                      <p className="mt-4">
+                        Join HealthTree's international recruitment program and
+                        advance your career worldwide. Explore exciting job
+                        opportunities in renowned hospitals. Apply now and
+                        embark on an extraordinary journey!
+                      </p>
+                    </div>
+                    <NavLink to={"/employees"}>
+                      <div className="arrowlink">
+                        <img src={rtarrow} alt="" />
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>

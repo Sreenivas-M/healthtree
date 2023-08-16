@@ -56,7 +56,7 @@ function Home() {
         </div>
         <div className="row section-2 shadow">
           <div className="col-md-4">
-            <div className="d-flex">
+            <div className="d-flex ">
               {" "}
               <div className="dot">
                 {" "}
@@ -73,9 +73,9 @@ function Home() {
               </span>
             </p>
           </div>
-          <div className="col-md-2">
-            <div className="text-center mt-sm-3 mt-md-0">
-              <button className="btn">KNOW MORE &nbsp; {">"}</button>
+          <div className="col-md-2 ps-lg-2 ps-sm-o">
+            <div className="md-text-center knowbtn ">
+              <button className="btn btnKnow">KNOW MORE &nbsp; {">"}</button>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ function Home() {
               </p>
 
               <div className="mt-2 pb-sm-3" style={{ float: "left" }}>
-                <button className="btn">KNOW MORE &nbsp; {">"}</button>
+                <button className="btn mb-2">KNOW MORE &nbsp; {">"}</button>
               </div>
             </div>
           </div>
@@ -236,14 +236,14 @@ function Home() {
         <img src={map} alt="" className="img-fluid" />
       </div>
       <div style={{ background: "#8fe4ff" }}>
-        <div className="row main p-5">
+        <div className="row mainperson">
           <div className="col-md-6 ">
             <h4 className="d-flex" style={{ color: "#005198" }}>
               For Candidates <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
-              <div class="container">
+              <div class="">
                 <h5 className="img">
                   "Unlock Global Opportunities in Healthcare”
                 </h5>
@@ -254,7 +254,7 @@ function Home() {
                   an extraordinary journey!
                 </p>
                 <div className="overlay">
-                  <div className="text  d-flex">
+                  <div className="text d-flex overlaybox">
                     <div>
                       {" "}
                       <h5>"Unlock Global Opportunities in Healthcare”</h5>
@@ -281,7 +281,7 @@ function Home() {
             </h4>
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
-              <div className="container">
+              <div className="">
                 <h5 className="img">
                   "Unlock Global Opportunities in Healthcare”
                 </h5>
@@ -292,7 +292,7 @@ function Home() {
                   an extraordinary journey!
                 </p>
                 <div class="overlay">
-                  <div class="text d-flex">
+                  <div class="text d-flex overlaybox">
                     <div>
                       <h5>"Unlock Global Opportunities in Healthcare”</h5>
                       <p className="mt-4">
@@ -325,11 +325,11 @@ function Home() {
         <Clientsayscarousel />
       </div>
       <div className="main">
-        <div className="d-flex justify-content-between">
-          <div className="d-flex">
+        <div className="d-flex justify-content-between blogsection">
+          <div className="d-flex blogheading">
             <div className="bar5"></div>
             <h2 className="serviceh1">News, Events and Blogs</h2>
-          </div>{" "}
+          </div>
           <h6 className="rightarrow">
             <NavLink
               to="./blog"
@@ -341,36 +341,83 @@ function Home() {
         </div>
         <div className="backcolor">
           <div className="row backimg">
-            <div className="col-md-4 cardborder p-3">
-              <img src={blog1} alt="" className="img-fluid" />
-              <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
-              <p>
-                {
-                  "Diagnosis and Symptoms Cubital tunnel syndrome is a condition that can cause severe pain,..."
-                }
-              </p>
-              <div>
-                <p className="text-primary">
-                  <a
-                    href={"http://localhost:3000/blog/blogone"}
-                    className=""
-                    style={{ textDecoration: "none" }}
-                  >
-                    CONTINUE
-                  </a>
-                </p>
-                <div
-                  className="bar"
-                  style={{
-                    marginLeft: "-1px",
-                    marginTop: "-10px",
-                    width: "100px",
-                  }}
-                ></div>
+            <div className="col-md-4 p-3">
+              <div className="card shadow">
+                <div className="pt-3 px-3">
+                  <img
+                    className="card-img-top"
+                    src={blog1}
+                    alt="Card image cap"
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">
+                    What is Cubital Tunnel Syndrom...
+                  </h5>
+                  <p className="card-text">
+                    Diagnosis and Symptoms Cubital tunnel syndrome is a
+                    condition that can cause severe pain,...
+                  </p>
+
+                  <p className="text-primary">
+                    <a
+                      href={"http://localhost:3000/blog/blogone"}
+                      className=""
+                      style={{ textDecoration: "none" }}
+                    >
+                      CONTINUE
+                    </a>
+                  </p>
+                  <div
+                    className="bar"
+                    style={{
+                      marginLeft: "-1px",
+                      marginTop: "-10px",
+                      width: "100px",
+                    }}
+                  ></div>
+                </div>
               </div>
             </div>
-            <div className="col-md-4 p-3 cardborder">
-              <img src={blog2} alt="" className="img-fluid" />
+            <div className="col-md-4 p-3 ">
+            <div className="card shadow">
+                <div className="pt-3 px-3">
+                  <img
+                    className="card-img-top"
+                    src={blog2}
+                    alt="Card image cap"
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">
+                    What is Cubital Tunnel Syndrom...
+                  </h5>
+                  <p className="card-text">
+                    Diagnosis and Symptoms Cubital tunnel syndrome is a
+                    condition that can cause severe pain,...
+                  </p>
+
+                  <p className="text-primary">
+                    <a
+                      href={"http://localhost:3000/blog/blogone"}
+                      className=""
+                      style={{ textDecoration: "none" }}
+                    >
+                      CONTINUE
+                    </a>
+                  </p>
+                  <div
+                    className="bar"
+                    style={{
+                      marginLeft: "-1px",
+                      marginTop: "-10px",
+                      width: "100px",
+                    }}
+                  ></div>
+                </div>
+              </div>
+              
+              {/* <img src={blog2} alt="" className="img-fluid" />
               <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
               <p>
                 {
@@ -395,10 +442,46 @@ function Home() {
                     width: "100px",
                   }}
                 ></div>
-              </div>
+              </div> */}
             </div>
-            <div className="col-md-4 p-3 cardborder">
-              <img src={blog3} alt="" className="img-fluid" />
+            <div className="col-md-4 p-3">
+            <div className="card shadow">
+                <div className="pt-3 px-3">
+                  <img
+                    className="card-img-top"
+                    src={blog3}
+                    alt="Card image cap"
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">
+                    What is Cubital Tunnel Syndrom...
+                  </h5>
+                  <p className="card-text">
+                    Diagnosis and Symptoms Cubital tunnel syndrome is a
+                    condition that can cause severe pain,...
+                  </p>
+
+                  <p className="text-primary">
+                    <a
+                      href={"http://localhost:3000/blog/blogone"}
+                      className=""
+                      style={{ textDecoration: "none" }}
+                    >
+                      CONTINUE
+                    </a>
+                  </p>
+                  <div
+                    className="bar"
+                    style={{
+                      marginLeft: "-1px",
+                      marginTop: "-10px",
+                      width: "100px",
+                    }}
+                  ></div>
+                </div>
+              </div>
+              {/* <img src={blog3} alt="" className="img-fluid" />
               <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
               <p>
                 {
@@ -423,7 +506,7 @@ function Home() {
                     width: "100px",
                   }}
                 ></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

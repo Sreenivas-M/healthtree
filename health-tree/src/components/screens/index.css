@@ -193,6 +193,7 @@
 .box4 {
   height: 260px;
   width: 450px;
+
 }
 .box4 > div {
   border: 1px dotted #005198;
@@ -244,7 +245,7 @@
   border-radius: 0;
 }
 /* image caurosel */
-.carousel .control-dots .dot.selected { 
+.carousel .control-dots .dot.selected {
   width: 100px;
   height: 5px;
   border-radius: 0%;
@@ -264,7 +265,9 @@
   font-size: small;
   font-weight: 16px;
 }
-
+.mainperson {
+  padding: 100px;
+}
 .person {
   border: 5px solid #fff;
   margin: 5px 20px 5px 0px;
@@ -276,7 +279,7 @@
 }
 
 .image {
-  z-index: 9;
+  z-index: 1;
 }
 .img {
   display: block;
@@ -404,7 +407,7 @@
   box-shadow: #8fe4ff;
 }
 
-/* diagnostics */
+/* diagnostics
 .recbanner1 {
   font-family: "merriweather";
   font-size: 44px;
@@ -414,7 +417,7 @@
   color: #fff;
   margin-top: 50px;
   padding: 0px 100px;
-}
+} */
 
 /* ourstory */
 
@@ -476,12 +479,21 @@
   width: 600px;
   height: 420px;
 }
-.socailp{
+.socailp {
   text-align: center;
   margin-left: 30px;
 }
-@media only screen and (max-width: 756px) {
+.lnameinput{
+  width: 310px;
+}
+.lnameinput2{
+  width: 295px;
+}
+.fnameinput{
+  width: 290px;
+}
 
+@media only screen and (max-width: 767px) {
   .main {
     margin: 20px !important;
   }
@@ -499,39 +511,40 @@
     margin-top: 30px;
     text-align: left;
   }
-.box4{
-  margin: auto;
-}
-.box-img{
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-}
-.control-dots{
-  margin-top: 50px !important;
-}
-.bar5{
-  display: none;
-}
-.backimg{
-  align-items: center !important;
-  text-emphasis: none;
-}
-.cardborder{
-  border-bottom:1px solid #005198;
+  .box4 {
+    margin: auto;
+  }
+  .box-img {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .control-dots {
+    margin-top: 50px !important;
+  }
 
-}
-.social{
-  align-items: center !important;
-  justify-content: center !important;
-}
-.socail.img{
-  margin: 10px !important;
+  .backimg {
+    align-items: center !important;
+    text-emphasis: none;
+  }
+  .cardborder {
+    padding: 20px !important;
+    border-bottom: 1px solid #005198;
+  }
+  .social {
+    align-items: center !important;
+    justify-content: space-evenly !important;
+  }
+  .terms{
+    margin: 15px 0;
 
-}
-.socailp{
-  justify-content: center !important;
-}
+  }
+  .socail.img {
+    margin: 5px !important;
+  }
+  .socailp {
+    justify-content: center !important;
+  }
 
   .recbanner {
     font-size: 20px;
@@ -541,18 +554,186 @@
     padding-bottom: 20px;
   }
   .resmap {
-    width: 450px;
+    width: 380px;
     height: 250px;
   }
-  .serviceh1{
+  .serviceh1 {
     align-items: center;
     font-family: "merriweather";
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
   }
-  .rightarrow{
-margin-left: -20px !important;
-margin-top: 10px;
+  .rightarrow {
+    margin-left: -20px !important;
+    margin-top: 10px;
+  }
+  .btnKnow {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .box {
+    width: 350px;
+    background: #fff;
+    text-align: center;
+    top: 20px !important;
+    position: relative !important;
+    margin: auto !important;
+  }
+  .bar {
+    margin: 0 10px;
+    width: 90px;
+    height: 8px;
+    background: #005198;
+    color: #005198;
+  }
+  .para1 {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .section-4 {
+    margin: 50px 0;
+  }
+  .section6 {
+    margin: 20px 0px;
+  }
+  .blogsection {
+    display: block !important;
+    text-align: center;
+    justify-content: center !important;
+  }
+  .blogheading {
+    display: flex;
+    text-align: center;
+    justify-content: center !important  ;
+  }
+  .bar5 {
+    display: none;
+  }
+
+  .mainperson {
+    margin: 20px 0 !important;
+    padding: 5px !important;
+  }
+  .person {
+    border: 5px solid #fff;
+    margin: auto;
+    background: #005198;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+  }
+  .img {
+    font-size: small;
+    padding-top: 5px;
+    font-weight: 300;
+  }
+  .person > div > p {
+    font-size: small;
+    font-weight: 100;
+  }
+  .image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .arrowlink {
+    background: #005198;
+    color: #fff;
+    align-items: center;
+    padding: 5px 2px;
+    align-items: center;
+    text-align: center;
+    margin-left: -5px;
+    border: 1px solid #007bff;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 35px !important;
+    /* right: 0; */
+    background-color: #fff;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+    color: black;
+  }
+  .person:hover .overlay {
+    width: 100%;
+  }
+  .person:hover .overlaybox {
+    display:block !important;
+  }
+  
+  .text>div>h5{
+    font-size: 16px;
+  }
+  .text>div>p{
+    font-size: 11px;
+    margin-right: 30px;
+  }
+  .lnameinput{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .fnameinput{
+    width: 100%;
+  }
+  .lnameinput2{
+    margin-top: 15px;
+    width: 100%;
+  }
+  .whatsapp {
+    position: fixed;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+  }
+  .socaillogo{
+    width: 300px;
+  }
+  .footertext {
+    color: #fff;
+    font-family: "montserrat";
+    font-size:10px;
+    font-weight: 6px;
+  }
+  .recbanner {
+    font-family: "merriweather";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    transform: translateY(30%);
+    color: #fff;
+  }
+  .banner{
+    margin-top: 120px;
+  }
+  .recbanner5 {
+    font-family: "merriweather";
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0px 100px 0px !important;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  .recbanner1 {
+    font-family: "merriweather";
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    transform: translateY(40%);
+    color: #fff;
+    margin: auto;
+    padding: 0px 0 150px 5px;
+  }
+  .section-4 {
+    padding-bottom: 50px;
   }
 
 }

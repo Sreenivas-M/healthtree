@@ -16,6 +16,15 @@ function ServiceCarousel() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive:[
+      {
+        breakpoint: 600,
+        settings:{
+          slidesToShow: 3,
+        }
+      }
+        
+      ]
   };
   return (
     <>

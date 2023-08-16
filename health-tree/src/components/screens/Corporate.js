@@ -36,7 +36,7 @@ const data = [
 function Corporate() {
   return (
     <>
-      <div style={{ background: "#005198" }}>
+      <div style={{ background: "#005198" }} className="banner">
         <div className="row main">
           <div className="col-md-6">
             <h1 className="recbanner">

@@ -23,12 +23,12 @@ function Imgcarousel() {
       slidesToScroll: 1,
     };  
     return (
-        <div className='mt-5 mb-5 px-5'>
+        <div className='mt-5 mb-5 px-3'>
           <Slider ref={sliderRef} {...settings}>
-          <div className="container">
+          <div className="">
             <img src={croimg} className="img-fluid" />
           </div>
-          <div className="container">
+          <div className="">
             <img src={croimg} className="img-fluid" />
           </div>
           </Slider>

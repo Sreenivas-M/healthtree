@@ -4,7 +4,10 @@ body {
   font-weight: bold;
 }
 
-
+.logo {
+  width: 250px !important;
+  height: 80px !important;
+}
 .customnav {
   background: #d7f2fb;
   border-radius: 20px;
@@ -13,28 +16,47 @@ body {
 }
 .customnav:hover {
   background: #005198;
-  border-radius: 20px;      
-  transition: .5s ease-in-out;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
   border-color: none;
-  color: #fff !important; 
+  color: #fff !important;
 }
 
 .customnav:hover .nav-link {
-    color: #fff !important; 
+  color: #fff !important;
+}
+
+.nav-link.active {
+  color: #fff !important;
+  background: #005198;
+  border-radius: 20px;
+}
+
+.navbar{
+  /*   z-index should be above .close-navbar-toggler */
+    z-index:2;
+  }
+  .close-navbar-toggler{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+    cursor:pointer;
+  }
+  .close-navbar-toggler.collapsed{
+    z-index:-1;
   }
 
- .nav-link.active {
-    color: #fff !important; 
-    background: #005198;
-    border-radius: 20px; 
-  }
-
-
-  @media only screen and (max-width: 756px) {
-  .navbar{
-    background:#d7f2fb !important;
+@media only screen and (max-width: 756px) {
+  .navbar {
+    background: #d7f2fb !important;
     text-align: center;
   }
+  .logo {
+    width: 200px !important;
+    height: 80px !important;
+    line-height: 80px;
   }
-  
-
+}

@@ -15,6 +15,15 @@ function ClientCarousel() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive:[
+    {
+      breakpoint: 600,
+      settings:{
+        slidesToShow: 3,
+      }
+    }
+      
+    ]
   };
   return (
     <div style={{background:"#8fe4ff", padding:"0 50px 50px 50px"}}>
@@ -30,22 +39,22 @@ function ClientCarousel() {
       </div>
       <div className="mainContainer">
         <Slider {...settings}>
-          <div className="">
+          <div className="p-1">
             <img src={logo1} className="img-fluid"/>
           </div>
-          <div className="">
+          <div className="p-1">
             <img src={logo2} className="img-fluid"/>
           </div>
-          <div className="">
+          <div className="p-1">
             <img src={logo4} className="img-fluid"/>
           </div>
-          <div className="">
+          <div className="p-1">
             <img src={logo3} className="img-fluid"/>
           </div>
-          <div className="">
+          <div className="p-1">
             <img src={logo1} className="img-fluid"/>
           </div>
-          <div className="">
+          <div className="p-1">
             <img src={logo4} className="img-fluid"/>
           </div>
         </Slider>

@@ -139,7 +139,7 @@ function Footer() {
           <img src={ftimg} alt="" className="img-fluid" />
         </div>
         <div className="col-md-4">
-          <div className="d-flex justify-content-center align-items-center ">
+          <div className="d-flex justify-content-center align-items-center  terms">
             <p>Terms of Service </p> &nbsp; &nbsp; &nbsp;{" "}
             <p> Privacy Policy </p>
           </div>
@@ -147,7 +147,7 @@ function Footer() {
         <div className="col-md-4 ">
           <div className="d-flex justify-content-between align-items-center social">
             <div>
-              <a href="https://kiran-v.netlify.app/" target="_blank">
+              <a href="https://www.facebook.app/" target="_blank">
                 <img src={fb} alt="" className="img-fluid" />
               </a>
             </div>
