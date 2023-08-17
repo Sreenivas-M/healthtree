@@ -12,7 +12,8 @@ const options = [
 function Candidates() {
   const [country, setCountry] = useState(null);
   const [state, setState] = useState(null);
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState("");
+  console.log("first", selectedFile.name)
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -57,30 +58,29 @@ function Candidates() {
         to_selectedFile: selectedFile,
         to_address:formData.address,
         to_city:formData.city,
-        to_country:formData.country,
-        to_state:formData.state,
+        to_country:country.label,
+        to_state:state.label,
         to_pincode:formData.pincode,        
-        message_html: `
-          Name: ${formData.fname}<br />
-          Name: ${formData.lname}<br />
-          Email: ${formData.email}<br />
-          Phone Number: ${formData.phoneNumber}<br />
-          Message: ${formData.message}<br />
-          Position: ${formData.position}<br />
-          Location: ${formData.location}<br />
-          Experiance: ${formData.experiance}<br />
-          Address: ${formData.address}<br />
-          City: ${formData.city}<br />
-          Pincode: ${formData.pincode}<br />
-          File: ${selectedFile}<br />
-          Country: ${country}<br />
-          State: ${state}<br />
+        // message_html: `
+        //   Name: ${formData.fname} + ${formData.lname}<br />
+        //   Email: ${formData.email}<br />
+        //   Phone Number: ${formData.phoneNumber}<br />
+        //   Message: ${formData.message}<br />
+        //   Position: ${formData.position}<br />
+        //   Location: ${formData.location}<br />
+        //   Experiance: ${formData.experiance}<br />
+        //   Address: ${formData.address}<br />
+        //   City: ${formData.city}<br />
+        //   Pincode: ${formData.pincode}<br />
+        //   File: ${selectedFile}<br />
+        //   Country: ${country.label}<br />
+        //   State: ${state.label}<br />
           
-        `,
+        // `,
       };
-      const serviceID = "service_3qw0dgr";
-      const templateID = "template_0lfvgxw";
-      const publicKey = "4i-_qT5weaGkFiVzL";
+      const serviceID = "service_yctyj6p";
+      const templateID = "template_5ie0ulp";
+      const publicKey = "s-0orFmA7Q__FNK0n";
       await emailjs
         .send(serviceID, templateID, templateParams, publicKey)
         .then((res) => {
@@ -100,7 +100,7 @@ function Candidates() {
   };
 
   return (
-    <div className="main">
+    <div className="main canditete">
       <h1 className="ctsus">
         Partner with HealthTree for Your Healthcare Workforce Needs
       </h1>
@@ -170,6 +170,7 @@ function Candidates() {
                 name="position"
                 value={formData.position}
                 onChange={handleInputChange}
+                required
               
               />
             </div>
@@ -201,6 +202,8 @@ function Candidates() {
                 className="form-control ml-5"
                 placeholder="Upload Resume/CV:"
                 onChange={handleFileChange}
+                accept=".pdf,.doc,.docx" 
+                required
               />
             </div>
             <div className="form-group col pt-2">

@@ -9,7 +9,7 @@ function Diagonastics() {
       <div>
         <div
           className="row"
-          style={{ background: "#005198", marginTop: "100px" }}
+          style={{ background: "#005198", marginTop: "95px" }}
         >
           <div className="col-md-6">
             <h1 className="recbanner5">

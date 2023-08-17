@@ -43,25 +43,23 @@ function HealthcareForm() {
         to_questions: formData.questions,
         to_concerns: formData.concerns,
         to_companions: formData.companions,
-        message_html: `
-          Name: ${formData.fname}<br />
-          Name: ${formData.lname}<br />
-          Email: ${formData.email}<br />
-          Phone Number: ${formData.phoneNumber}<br />
-          Phone Number: ${formData.message}<br />
-          Destination: ${formData.destination}<br />
-          Comments: ${formData.comments}<br />
-          SelectedDate: ${selectedDate}<br />
-          Questions: ${formData.questions}<br />
-          Concerns: ${formData.concerns}<br />
-          Companions: ${formData.concerns}<br />
-          
-          
-        `,
+        // message_html: `
+        //   Name: ${formData.fname}<br />
+        //   Name: ${formData.lname}<br />
+        //   Email: ${formData.email}<br />
+        //   Phone Number: ${formData.phoneNumber}<br />
+        //   Phone Number: ${formData.message}<br />
+        //   Destination: ${formData.destination}<br />
+        //   Comments: ${formData.comments}<br />
+        //   SelectedDate: ${selectedDate}<br />
+        //   Questions: ${formData.questions}<br />
+        //   Concerns: ${formData.concerns}<br />
+        //   Companions: ${formData.concerns}<br />
+        // `,
       };
-      const serviceID = "service_3qw0dgr";
-      const templateID = "template_0lfvgxw";
-      const publicKey = "4i-_qT5weaGkFiVzL";
+      const serviceID = "service_yctyj6p";
+      const templateID = "template_pdt5jpo";
+      const publicKey = "s-0orFmA7Q__FNK0n";
       await emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((res) => {
         setTimeout(() => {
@@ -82,7 +80,7 @@ function HealthcareForm() {
   return (
     <>
       <div className="main">
-        <h1>Get in touch with us!</h1>
+        <h1 className="helthfrm">Get in touch with us!</h1>
         <p>
           Thank you for considering HealthTree for your healthcare tourism
           journey. To tailor an unforgettable experience that meets your unique

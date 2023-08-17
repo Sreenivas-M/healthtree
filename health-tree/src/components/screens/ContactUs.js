@@ -55,11 +55,11 @@ function ContactUs() {
   };
   return (
     <>
-      <div style={{ background: "#e7f8fd" }} className="pt-5 pb-3">
+      <div style={{ background: "#e7f8fd", marginTop:"100px"}} className="pt-5 pb-3">
         <h1 className="text-center ctsus">Contact Us</h1>
       
       <div className="row main">
-        <div className="col-md-6">
+        <div className="col-md-12 col-lg-6">
           <div className="embed-responsive embed-responsive-16by9 text-center justify-content-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5535651966684!2d77.60858627489591!3d13.000381114247036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f633958de1%3A0x9cdb8db0de481b24!2sHealthTree%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1691688009132!5m2!1sen!2sin"
@@ -111,7 +111,7 @@ function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="col-md-6" style={{ background: "#fff" }}>
+        <div className="col-md-12 col-lg-6" style={{ background: "#fff" }}>
           <div className="border p-3 shadow">
             <h3 className="mt-4 ctsus2">Get in touch with us!</h3>
             <p className="mt-4 ctusp">

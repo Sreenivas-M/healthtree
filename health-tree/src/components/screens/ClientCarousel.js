@@ -26,10 +26,10 @@ function ClientCarousel() {
     ]
   };
   return (
-    <div style={{background:"#8fe4ff", padding:"0 50px 50px 50px"}}>
+    <div style={{ background: "linear-gradient(180deg, #00BEF2 0%, #014F93 100%)", padding:"0 50px 50px 50px"}}>
       <div className="mt-5 pb-5">
         <h1 className="clienth1">OUR CLIENTS</h1>
-        <p className="text-center">
+        <p className="text-center" style={{color:"#fff"}}>
           Our trusted patronage spans corporate clients, IT companies, MNCs,
           BPOs, star hotels, residential enclaves, and <br /> overseas patients. With a
           dynamic team of professionals, we are committed to redefining the

@@ -13,7 +13,7 @@ function OurStory() {
       <div>
         <div
           className="row"
-          style={{ background: "#005198", marginTop: "100px" }}
+          style={{ background: "linear-gradient(180deg, #00BEF2 0%, #014F93 100%)", marginTop: "100px" }}
         >
           <div className="col-md-6">
             <h1 className="recbanner1">

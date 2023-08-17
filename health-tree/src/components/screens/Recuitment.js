@@ -5,7 +5,7 @@ import world from "../images/world.png";
 import qa from "../images/qa.png";
 import PEOP from "../images/PEOP.png";
 import Layer1 from "../images/Layer1.png";
-import healthtree from "../images/healthtree.png";
+import edit from "../images/edit.png";
 import Frame2 from "../images/Frame2.png";
 import Component from "../images/Component.png";
 import stage1 from "../images/stage1.png";
@@ -199,7 +199,7 @@ function Recuitment() {
               For Candidates <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
-              <img src={person} alt="" className="image" />
+              <img src={edit} alt="" className="image" />
               <div class="">
                 <h5 className="img">
                   "Unlock Global Opportunities in Healthcare”
@@ -239,24 +239,26 @@ function Recuitment() {
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
               <div className="">
-                <h5 className="img">
-                  "Unlock Global Opportunities in Healthcare”
+                <h5 className="img pt-1">
+                  "Discover Top Nursing Talent Worldwide”
                 </h5>
                 <p className="mt-4">
-                  Join HealthTree's international recruitment program and
-                  advance your career worldwide. Explore exciting job
-                  opportunities in renowned hospitals. Apply now and embark on
-                  an extraordinary journey!
+                  Connect with HealthTree to access skilled and qualified
+                  candidates globally. Streamline your recruitment process and
+                  build a diverse healthcare team. Partner with us today and
+                  unlock excellence!
                 </p>
                 <div class="overlay">
                   <div class="text d-flex overlaybox">
                     <div>
-                      <h5>"Unlock Global Opportunities in Healthcare”</h5>
+                      <h5 className="pt-1">
+                        "Discover Top Nursing Talent Worldwide”
+                      </h5>
                       <p className="mt-4">
-                        Join HealthTree's international recruitment program and
-                        advance your career worldwide. Explore exciting job
-                        opportunities in renowned hospitals. Apply now and
-                        embark on an extraordinary journey!
+                        Connect with HealthTree to access skilled and qualified
+                        candidates globally. Streamline your recruitment process
+                        and build a diverse healthcare team. Partner with us
+                        today and unlock excellence!
                       </p>
                     </div>
                     <NavLink to={"/employees"}>

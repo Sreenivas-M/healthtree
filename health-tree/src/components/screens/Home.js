@@ -17,6 +17,7 @@ import Layer1 from "../images/Layer1.png";
 import framecss from "../images/framecss.png";
 import map from "../images/map.png";
 import person from "../images/person.png";
+import edit from "../images/edit.png";
 import rtarrow from "../images/rtarrow.png";
 import ImageCarousel from "./ImageCarousel";
 import ContactUs from "./ContactUs";
@@ -44,8 +45,14 @@ function Home() {
                 trust, transparency, and accountability. Experience our uniquely
                 tailored solutions delivered with utmost professionalism.
               </p>
-
-              <button className="btn mt-3 mb-4">CONTACT US &nbsp; {">"}</button>
+              <NavLink
+                to={"/contact"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <button className="btn mt-3 mb-4">
+                  CONTACT US &nbsp; {">"}
+                </button>
+              </NavLink>
             </div>
           </div>
           <div className="col-md-6">
@@ -55,7 +62,7 @@ function Home() {
           </div>
         </div>
         <div className="row section-2 shadow">
-          <div className="col-md-4">
+          <div className="col-md-3 col-lg-4">
             <div className="d-flex ">
               {" "}
               <div className="dot">
@@ -65,7 +72,7 @@ function Home() {
               <p className="para">I am interested in discovering</p>
             </div>
           </div>
-          <div className="col-md-6 about">
+          <div className="col-md-6 col-lg-6 about">
             <p style={{ paddingLeft: "20px" }}>
               About Corporate Health Care Services{" "}
               <span className="downarrow">
@@ -73,7 +80,7 @@ function Home() {
               </span>
             </p>
           </div>
-          <div className="col-md-2 ps-lg-2 ps-sm-o">
+          <div className="col-md-2 ps-lg-2 ps-sm-0">
             <div className="md-text-center knowbtn ">
               <button className="btn btnKnow">KNOW MORE &nbsp; {">"}</button>
             </div>
@@ -81,7 +88,7 @@ function Home() {
         </div>
 
         <div className="row section-3 ">
-          <div className="col-md-5">
+          <div className="col-lg-6">
             <div className="box">
               <h2>
                 <div className="bar"></div>Who we are?
@@ -99,11 +106,11 @@ function Home() {
               </p>
 
               <div className="mt-2 pb-sm-3" style={{ float: "left" }}>
-                <button className="btn mb-2">KNOW MORE &nbsp; {">"}</button>
+                <button className="btn mb-2 ">KNOW MORE &nbsp; {">"}</button>
               </div>
             </div>
           </div>
-          <div className="col-md-7">
+          <div className="col-lg-6">
             <div>
               <img src={doctor} className="img-fluid" alt="" />
             </div>
@@ -144,35 +151,35 @@ function Home() {
           <h3>Elevate Employee Wellness and Satisfaction with our All-</h3>
           <h3>Inclusive, Personalized Corporate Healthcare Solutions.</h3>
         </div>
-        <div className="row mt-5 justify-content-between">
-          <div className="col-md-2 col-sm-6 mt-3">
+        <div className="row mt-5  justify-content-evenly">
+          <div className="col-md-6 col-sm-6 col-lg-2 mt-3">
             <div className="box-img">
               <img src={group6} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 mt-3">
+          <div className="col-md-6 col-sm-6 col-lg-2 mt-3">
             <div className="box-img">
               <img src={group2} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 mt-3">
+          <div className="col-md-6 col-sm-6 col-lg-2 mt-3">
             <div className="box-img">
               <img src={group1} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 mt-3">
+          <div className="col-md-6 col-sm-6 col-lg-2 mt-3">
             <div className="box-img">
               <img src={group5} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 mt-3">
+          <div className="col-md-6 col-sm-6 col-lg-2 mt-3">
             <div className="box-img">
               <img src={group1} alt="" className="img-fluid" />
             </div>
           </div>
         </div>
       </div>
-      <div className="section-6">
+      <div className="section-6 mt-2 mb-5">
         <div>
           <ImageCarousel />
         </div>
@@ -185,11 +192,11 @@ function Home() {
             international hiring, on boarding, and the entire{" "}
             <span className="cutcolor">
               {" "}
-              HR-administrative <br />
+              HR-administrative
               process on one dashboard,
             </span>{" "}
             and with ease of use. Our technology makes it easy for you to
-            generate a locally compliant <br /> employment system to chose{" "}
+            generate a locally compliant employment system to chose{" "}
             <span className="cutcolor"> anyone, anywhere, anytime.</span>
           </p>
         </div>
@@ -199,7 +206,7 @@ function Home() {
       </div>
       <div>
         <div className="row">
-          <div className="col-md-8 text-center">
+          <div className="col-md-12 col-lg-8 text-center">
             <h2 className="p-2">
               Stages we follow while hiring the candidates
             </h2>
@@ -207,7 +214,7 @@ function Home() {
               <img src={framecss} alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-12 col-lg-4 text-center">
             <div className="border border-primary text-center m-3">
               <img src={hr} alt="" className="img-fluid p-2" />
               <p className="countptext">Simplified Recruitment</p>
@@ -235,16 +242,16 @@ function Home() {
       <div>
         <img src={map} alt="" className="img-fluid" />
       </div>
-      <div style={{ background: "#8fe4ff" }}>
+      <div style={{  background: "linear-gradient(180deg, #00BEF2 0%, #014F93 100%)" }}>
         <div className="row mainperson">
-          <div className="col-md-6 ">
-            <h4 className="d-flex" style={{ color: "#005198" }}>
+          <div className="col-md-12 col-lg-6 ">
+            <h4 className="d-flex" style={{ color: "#fff" }}>
               For Candidates <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
-              <img src={person} alt="" className="image" />
+              <img src={edit} alt="" className="image" />
               <div class="">
-                <h5 className="img">
+                <h5 className="img pt-1">
                   "Unlock Global Opportunities in Healthcare”
                 </h5>
                 <p className="mt-4">
@@ -257,7 +264,9 @@ function Home() {
                   <div className="text d-flex overlaybox">
                     <div>
                       {" "}
-                      <h5>"Unlock Global Opportunities in Healthcare”</h5>
+                      <h5 className="pt-1">
+                        "Unlock Global Opportunities in Healthcare”
+                      </h5>
                       <p className="mt-4">
                         Join HealthTree's international recruitment program and
                         advance your career worldwide. Explore exciting job
@@ -275,31 +284,33 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 ">
-            <h4 className="d-flex" style={{ color: "#005198" }}>
+          <div className="col-md-12 col-lg-6 ">
+            <h4 className="d-flex" style={{ color: "#fff" }}>
               For Employers <div className="fooo"></div>
             </h4>
             <div className="d-flex person">
               <img src={person} alt="" className="image" />
               <div className="">
-                <h5 className="img">
-                  "Unlock Global Opportunities in Healthcare”
+                <h5 className="img pt-1">
+                  "Discover Top Nursing Talent Worldwide”
                 </h5>
                 <p className="mt-4">
-                  Join HealthTree's international recruitment program and
-                  advance your career worldwide. Explore exciting job
-                  opportunities in renowned hospitals. Apply now and embark on
-                  an extraordinary journey!
+                  Connect with HealthTree to access skilled and qualified
+                  candidates globally. Streamline your recruitment process and
+                  build a diverse healthcare team. Partner with us today and
+                  unlock excellence!
                 </p>
                 <div class="overlay">
                   <div class="text d-flex overlaybox">
                     <div>
-                      <h5>"Unlock Global Opportunities in Healthcare”</h5>
+                      <h5 className="pt-1">
+                        "Discover Top Nursing Talent Worldwide”
+                      </h5>
                       <p className="mt-4">
-                        Join HealthTree's international recruitment program and
-                        advance your career worldwide. Explore exciting job
-                        opportunities in renowned hospitals. Apply now and
-                        embark on an extraordinary journey!
+                        Connect with HealthTree to access skilled and qualified
+                        candidates globally. Streamline your recruitment process
+                        and build a diverse healthcare team. Partner with us
+                        today and unlock excellence!
                       </p>
                     </div>
                     <NavLink to={"/employees"}>
@@ -380,7 +391,7 @@ function Home() {
               </div>
             </div>
             <div className="col-md-4 p-3 ">
-            <div className="card shadow">
+              <div className="card shadow">
                 <div className="pt-3 px-3">
                   <img
                     className="card-img-top"
@@ -416,36 +427,9 @@ function Home() {
                   ></div>
                 </div>
               </div>
-              
-              {/* <img src={blog2} alt="" className="img-fluid" />
-              <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
-              <p>
-                {
-                  "Diagnosis and Symptoms Cubital tunnel syndrome is a condition that can cause severe pain,..."
-                }
-              </p>
-              <div>
-                <p className="text-primary">
-                  <a
-                    href={"http://localhost:3000/blog/blogone"}
-                    className=""
-                    style={{ textDecoration: "none" }}
-                  >
-                    CONTINUE
-                  </a>
-                </p>
-                <div
-                  className="bar"
-                  style={{
-                    marginLeft: "-1px",
-                    marginTop: "-10px",
-                    width: "100px",
-                  }}
-                ></div>
-              </div> */}
             </div>
             <div className="col-md-4 p-3">
-            <div className="card shadow">
+              <div className="card shadow">
                 <div className="pt-3 px-3">
                   <img
                     className="card-img-top"
@@ -481,32 +465,6 @@ function Home() {
                   ></div>
                 </div>
               </div>
-              {/* <img src={blog3} alt="" className="img-fluid" />
-              <h6 className="pt-2">{"What is Cubital Tunnel Syndrom..."}</h6>
-              <p>
-                {
-                  "Diagnosis and Symptoms Cubital tunnel syndrome is a condition that can cause severe pain,..."
-                }
-              </p>
-              <div>
-                <p className="text-primary">
-                  <a
-                    href={"http://localhost:3000/blog/blogone"}
-                    className=""
-                    style={{ textDecoration: "none" }}
-                  >
-                    CONTINUE
-                  </a>
-                </p>
-                <div
-                  className="bar"
-                  style={{
-                    marginLeft: "-1px",
-                    marginTop: "-10px",
-                    width: "100px",
-                  }}
-                ></div>
-              </div> */}
             </div>
           </div>
         </div>

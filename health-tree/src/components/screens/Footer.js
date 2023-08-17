@@ -22,7 +22,7 @@ function Footer() {
   return (
     <>
       <div className="row main">
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <h5>Quick Links</h5>
           <ul className="disk">
             <li className="p-1">
@@ -59,7 +59,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <h5>Quick Links</h5>
           <ul className="disk">
             <li className="p-1">
@@ -104,7 +104,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-12 col-lg-6">
           <div className="border p-3">
             <h5 className="font-weight-bold">Subscribe</h5>
             <div className="d-flex">
