@@ -3,7 +3,7 @@ import ftimg from "../images/ftimg.png";
 import fb from "../images/fc.png";
 import link from "../images/link.png";
 import you from "../images/you.png";
-import insta from "../images/fc.png";
+import insta from "../images/insta.png";
 import twi from "../images/twi.png";
 import rtarrow from "../images/rtarrow.png";
 import { NavLink } from "react-router-dom";
@@ -145,18 +145,18 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-4 ">
-          <div className="d-flex justify-content-between align-items-center social">
+          <div className="d-flex justify-content-evenly align-items-center social">
             <div>
-              <a href="https://www.facebook.app/" target="_blank">
+              <a href="https://www.facebook.com/HealthtreeServicesPrivateLimited/" target="_blank">
                 <img src={fb} alt="" className="img-fluid" />
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/" target="_blank">
+              <a href="https://www.linkedin.com/company/87209560/admin/feed/posts/" target="_blank">
                 <img src={link} alt="" />
               </a>
             </div>
-            <div>
+            {/* <div>
               <a href="https://www.instagram.com/" target="_blank">
                 <img src={insta} alt="" />
               </a>
@@ -170,7 +170,7 @@ function Footer() {
               <a href="https://twitter.com/" target="_blank">
                 <img src={twi} alt="" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

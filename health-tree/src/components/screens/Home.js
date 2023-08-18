@@ -82,7 +82,13 @@ function Home() {
           </div>
           <div className="col-md-2 ps-lg-2 ps-sm-0">
             <div className="md-text-center knowbtn ">
-              <button className="btn btnKnow">KNOW MORE &nbsp; {">"}</button>
+            <NavLink
+                to={"/ourstory"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+               <button className="btn btnKnow">KNOW MORE &nbsp; {">"}</button>
+              </NavLink>
+              
             </div>
           </div>
         </div>
@@ -106,7 +112,13 @@ function Home() {
               </p>
 
               <div className="mt-2 pb-sm-3" style={{ float: "left" }}>
-                <button className="btn mb-2 ">KNOW MORE &nbsp; {">"}</button>
+              <NavLink
+                to={"/ourstory"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+               <button className="btn mb-2 ">KNOW MORE &nbsp; {">"}</button>
+              </NavLink>
+                
               </div>
             </div>
           </div>
